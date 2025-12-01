@@ -72,6 +72,13 @@ After installation:
 
 ---
 
+### Documentation
+
+For reference material and help pages specific to GameMaker 8, you can consult:  
+[`https://documentation.help/Game-Maker-8`](https://documentation.help/Game-Maker-8)
+
+---
+
 ### Using It With Projects
 
 This repo does **not** contain example projects, but once GameMaker 8.1 is installed you can:

@@ -1,158 +1,105 @@
-## GameMaker 8.1 – Setup & Usage Guide
+## GameMaker 8.1 – Local Installer Repo
 
-This project is meant to explore games that were made in the past using the **GML** language with **GameMaker 8.1**.  
-The instructions below explain how to get GameMaker 8.1 running on a modern Windows machine.
-
----
-
-### System Requirements
-
-- **Operating System**: Windows 7 (32-bit) or above  
-  - Tested on:  
-    - Windows 7 (32-bit / 64-bit)  
-    - Windows 10 / 11 (via compatibility mode, if needed)
-- **CPU**: Any x86-compatible processor from the Windows 7 era or newer  
-- **RAM**: 1 GB minimum (2 GB+ recommended)
-- **Disk Space**: ~200 MB free for GameMaker 8.1, plus additional space for project files and assets
+This repository provides a **local copy of the GameMaker 8.1 installer** for personal archival and experimentation with legacy **GML** projects.
 
 ---
 
-### 1. Getting the GameMaker 8.1 Installer
+### Repo Layout
 
-GameMaker 8.1 is **deprecated** and no longer officially sold, but the installer can still sometimes be found via:
+- **`Installer/GameMaker-Installer-8.1.exe`**: The GameMaker 8.1 installer executable.
 
-- **Official legacy download locations** (YoYo Games / Opera legacy pages, if still available)
-- **Reputable archival sources** that mirror older versions of GameMaker
-
-When downloading:
-
-- **Only use trusted sources**
-- **Verify file integrity** where possible (checksums, community verification, etc.)
-- Avoid any installers bundled with extra “toolbars”, “optimizers”, or other adware
-
-> Note: GameMaker 8.1 is obsolete and unsupported. For new, commercial, or long-term projects, consider the current version of GameMaker instead.
+There are currently **no project files** (`.gmk` / `.gm81`) checked into this repo.
 
 ---
 
-### 2. Installing GameMaker 8.1
+### System Requirements (Typical)
 
-1. **Run the installer**  
-   - Right-click the installer (`GM81.exe` or similar)  
-   - Choose **“Run as administrator”** (recommended on newer Windows versions)
+- **Operating System**: Windows 7 (32‑bit or 64‑bit) or later  
+  - Commonly used on: Windows 7, Windows 10, Windows 11  
+- **CPU**: Any x86-compatible CPU from the Windows 7 era or newer  
+- **RAM**: 1 GB minimum (2 GB+ recommended)  
+- **Disk Space**: ~200 MB for GameMaker 8.1 itself, plus extra for your projects/assets
 
-2. **Follow the setup wizard**  
-   - Accept the license terms  
-   - Choose an install directory (the default is usually fine)  
-   - Complete the installation
-
-3. **(Optional) Set compatibility mode on newer Windows versions**  
-   If you encounter crashes or UI glitches:
-   - Right-click the `Game_Maker.exe` shortcut or executable  
-   - Select **Properties → Compatibility**  
-   - Enable **“Run this program in compatibility mode for”** and choose **Windows 7**  
-   - Also consider checking **“Run this program as an administrator”**
+Actual behavior can vary on very new Windows builds; see the compatibility notes below if you hit issues.
 
 ---
 
-### 3. Licensing / Activation
+### Installing GameMaker 8.1 (Using This Repo)
 
-GameMaker 8.1 is no longer sold. That means:
+1. **Locate the installer**  
+   - Navigate to this repo’s root in Explorer.  
+   - Open the `Installer` folder.  
+   - Confirm you see `GameMaker-Installer-8.1.exe`.
 
-- **You cannot buy new licenses** from the official publisher
-- If you **already own a valid GameMaker 8 / 8.1 license**, you can:
-  - Enter your existing license key in the **License / Registration** dialog within GameMaker 8.1
-- If you **do not own a legacy license**, you should:
-  - Use GameMaker 8.1 only within whatever **trial / free limitations** the installer provides, or  
-  - Prefer the **current, supported version of GameMaker** for serious or commercial projects
+2. **Run the installer**  
+   - Right-click `GameMaker-Installer-8.1.exe`.  
+   - Choose **“Run as administrator”** (recommended on modern Windows).  
+   - Follow the setup wizard, accept the license, and keep the default install path unless you have a strong reason to change it.
 
-This project is focused on **historical exploration and learning**, not on bypassing license checks.
+3. **(If needed) Enable compatibility mode**  
+   If you see crashes, graphic glitches, or odd behavior:
+   - Right-click the installed `Game_Maker.exe` (or its shortcut).  
+   - Go to **Properties → Compatibility**.  
+   - Check **“Run this program in compatibility mode for”** and pick **Windows 7**.  
+   - Optionally check **“Run this program as an administrator”** as well.
 
 ---
 
-### 4. Running GameMaker 8.1
+### Licensing / Activation
+
+GameMaker 8.1 is **end-of-life** and **no longer sold** by the publisher.
+
+- If you **already own a valid legacy license**, you can enter your key inside GameMaker 8.1’s registration dialog.  
+- If you **do not own a license**, you are limited to whatever **trial / free mode** this installer provides and should **not** attempt to bypass licensing.  
+- For any serious or commercial work, you should strongly prefer the **current, supported version of GameMaker** instead.
+
+This repo is intended for **historical and educational use only**, not for circumventing licensing.
+
+---
+
+### Running GameMaker 8.1
 
 After installation:
 
-1. Launch **GameMaker 8.1** from the Start Menu or desktop shortcut.
-2. If prompted:
-   - Enter your existing license (if you have one), or  
-   - Continue with any available free / trial mode.
-3. You should now see the classic GameMaker 8.1 IDE with:
-   - Resource tree (sprites, sounds, objects, rooms, etc.)
-   - Code editor for **GML**
-   - Room editor and other classic tools
+1. Launch **GameMaker 8.1** from the Start Menu or desktop shortcut.  
+2. When prompted, either:
+   - Enter your **existing license key**, or  
+   - Continue with the **trial / free** mode (if available).  
+3. You should see the classic IDE with:
+   - Resource tree (sprites, sounds, objects, rooms, etc.)  
+   - GML code editor  
+   - Room editor and other built‑in tools
 
 ---
 
-### 5. Opening Existing Projects
+### Using It With Projects
 
-This repository is intended to explore old GML-based projects.
+This repo does **not** contain example projects, but once GameMaker 8.1 is installed you can:
 
-To open them:
+- **Open existing projects**:  
+  - Start GameMaker 8.1 → **File → Open** → select `.gmk` or `.gm81` files from your own folders.  
+- **Create new projects**:  
+  - **File → New**, add sprites/sounds/objects/rooms, write GML code, and run the game from the toolbar.
 
-1. Start GameMaker 8.1.
-2. Go to **File → Open**.
-3. Select a project file:
-   - `.gmk` (GameMaker 7 / 8 format)  
-   - `.gm81` (GameMaker 8.1 format), if available
-4. Verify that:
-   - Sprites, sounds, objects, and rooms load correctly  
-   - Any external DLLs or resources are present in the project folders
-
-> Some old projects may rely on **32-bit DLLs** or outdated extensions. These may not work correctly on modern systems or without additional configuration.
+Be aware that many older projects rely on **32‑bit DLLs** or outdated extensions, which may misbehave on modern systems.
 
 ---
 
-### 6. Creating / Editing Projects
+### Notes & Limitations
 
-Within GameMaker 8.1 you can:
-
-- **Create new projects** via **File → New**
-- **Add resources** using the right-click context menus in the resource tree:
-  - Sprites, Sounds, Backgrounds, Objects, Rooms
-- **Write GML code** by:
-  - Double-clicking an object → adding events → switching to the **Code** actions
-- **Run your game** with the **Run** / **Play** button in the toolbar
-
-This is ideal for:
-
-- Exploring how old GML codebases were structured  
-- Learning historical patterns and limitations of older GameMaker workflows  
-- Running and studying legacy games made with GM8/8.1
+- **Unsupported**: GameMaker 8.1 no longer receives updates or official support.  
+- **Compatibility**: It usually works on modern Windows but may break with future OS updates or security changes.  
+- **Missing modern features**: No modern shader pipeline, no current‑gen workflow UI, fewer quality‑of‑life tools.  
+- **Not recommended for new commercial games**: Use the latest GameMaker for anything long‑term or revenue‑generating.
 
 ---
 
-### 7. Notes & Limitations
+### Project Purpose
 
-- **No official support**: GameMaker 8.1 is unsupported by its original developer.
-- **Limited OS compatibility**:  
-  While it generally runs on modern Windows, future OS updates may break it.
-- **No modern features**:
-  - No built-in shader pipeline like recent GameMaker versions
-  - Older room editor, no modern workspace UI, and many quality-of-life features are missing
-- **Not recommended for new commercial projects**:
-  - For serious, long-term development, use the current version of GameMaker instead.
+- **Goal**: Keep a **local, self-contained installer** for GameMaker 8.1 to make it easy to spin up a legacy environment.  
+- **Intended use**:
+  - Open and run old GM8/8.1 games you already have.  
+  - Study historical GML patterns and workflows.  
+  - Perform small experiments or archival work, not modern production development.
 
----
-
-### 8. Project Purpose
-
-- **Goal**: Explore and understand **legacy GameMaker (GM8.1) games** and the **GML** language as it was used in the past.
-- **Scope**:
-  - Open and run old GM8/8.1 projects
-  - Study old GML scripts, object behavior, and design patterns
-  - Optionally make minor modifications to better understand how these games were built
-
-If you want, I can next:
-
-- Add example sections for **common troubleshooting** (crashes, missing DLLs, etc.), or  
-- Document how to **migrate** an old GM8.1 project toward newer versions of GameMaker.
-
-
-
-```markdown
-## References
-
-- [Possible to buy a GameMaker 8.1 license? – r/gamemaker](https://www.reddit.com/r/gamemaker/comments/1hnpq4k/possible_to_buy_a_gamemaker_81_license/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
-```
 
